@@ -10,3 +10,9 @@ def classify(features_train, labels_train):
     clf.fit(features_train, labels_train)
     return clf
 
+def accuracy(features_train, labels_train, features_test, labels_test):
+    clf = GaussianNB()
+    clf.fit(features_train, labels_train)
+    pred = clf.predict(features_test)
+    accuracy = clf.score(features_test, labels_test)
+    return accuracy
