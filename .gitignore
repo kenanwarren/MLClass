@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+enron_mail_20150507.tgz
+maildir/
+
 # C extensions
 *.so
 
