@@ -7,4 +7,6 @@ def classify(features_train, labels_train):
     ### return the fit classifier
     ### your code goes here!
     clf = GaussianNB()
-    return clf.fit(features_train, labels_train)
+    clf.fit(features_train, labels_train)
+    return clf
+
